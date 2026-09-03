@@ -16,7 +16,7 @@ Originalmente construído com HTML, CSS e JavaScript Vanilla, **este projeto foi
 * **Design Responsivo (Mobile First / Adaptive):** Layout perfeitamente ajustado para desktops, tablets e smartphones (com media queries customizadas).
 * **Botão "Voltar ao Topo":** Fixado na tela para facilitar a navegabilidade do usuário.
 
-## 🚀 Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
 A nova arquitetura do projeto utiliza as seguintes tecnologias:
 
@@ -26,7 +26,7 @@ A nova arquitetura do projeto utiliza as seguintes tecnologias:
 * **Bootstrap 5:** Sistema de grid responsivo e componentes base de layout.
 * **Google Fonts:** Tipografia *Poppins* para um visual limpo e moderno.
 
-## 🛠️ Como executar o projeto localmente
+## Como executar o projeto localmente
 
 1. **Clone o repositório:**
    git clone xxxxxxxxxxxxxxx

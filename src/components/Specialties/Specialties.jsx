@@ -23,7 +23,7 @@ function Specialties() {
             </h4>
             <p>
               Trazemos para o presente questões que causam sofrimento,
-              permitindo que você identifique emoções e faça escolhas de formna
+              permitindo que você identifique emoções e faça escolhas de forma
               mais consciente e espontânea.
             </p>
           </div>
@@ -33,9 +33,9 @@ function Specialties() {
               O que faz <br /> sentido para você
             </h4>
             <p>
-              Acredito que ninguém sabe mais de você do que você mesma. Meu
-              papel não é te explicar ou rotular, mas sim compreender o que faz
-              sentido para você a partir do que é compartilahdo em sessão.
+              Acredito que ninguém sabe mais sobre você do que você mesma. Meu
+              papel é te ajudar a compreender o que faz sentido para você e
+              caminharmos a partir disso
             </p>
           </div>
 
@@ -45,8 +45,9 @@ function Specialties() {
             </h4>
             <p>
               A terapia depende da qualidade do nosso encontro. É um espaço
-              seguro, sem julgametos, onde caminhamos juntas para fortalecer seu
-              autoconhecimento e sua capacidade de apoiar-se em sim mesma.
+              seguro, sem julgamentos, onde caminhamos juntos para fortalecer o
+              autoconhecimento e desenvolver sua capacidade de apoiar-se em si
+              mesma.
             </p>
           </div>
 

@@ -3,7 +3,7 @@ import image from '../../assets/image-about.png';
 
 function About() {
   return (
-    <section  id="about">
+    <section id="about">
       <div className="container">
         <div className="row about-row">
           <div className="col">
@@ -20,14 +20,14 @@ function About() {
               <p>
                 É uma alegria te receber aqui. Sou psicóloga formada há 10 anos
                 e atuo sob a perspectiva da Gestalt-terapia, compreendendo o ser
-                humano como alguém em constante relação com o mundo e cheio de
+                humano como alguém em constante relação com o mundo repleto de
                 possibilidades.
               </p>
               <p>
                 Acredito na sua capacidade de fazer escolhas conscientes e
                 conduzir sua própria vida de forma mais autêntica. Como
                 psicóloga, ofereço um espaço de escuta e acolhimento para te
-                auxiliar a compreender melhor suas relações e escolhas.
+                ajudar a compreender melhor suas relações e escolhas.
               </p>
               <p>
                 Sou também especialista em comportamento alimentar, focada em te

@@ -71,8 +71,9 @@ function Process() {
               <div className="card-item light-color">
                 <h3>Relacionamentos</h3>
                 <p>
-                  Compreensão de padrões de interação para promover sentimentos
-                  e necessidades em busca de vínculos genuínos.
+                  Ampliação da consciência sobre padrões de relacionamentos
+                  disfuncionais, possibilitando a construção de vínculos mais
+                  saudáveis.
                 </p>
               </div>
 

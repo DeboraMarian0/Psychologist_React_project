@@ -29,7 +29,7 @@ A nova arquitetura do projeto utiliza as seguintes tecnologias:
 ## Como executar o projeto localmente
 
 1. **Clone o repositório:**
-   git clone xxxxxxxxxxxxxxx
+   git clone https://github.com/DeboraMarian0/Psychologist_React_project.git
    
 2. **Instale o npm:**
    npm install

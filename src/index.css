@@ -1,0 +1,32 @@
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --background-color: #FFF8EB;
+    --text-color: #3E2700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    padding-top: 64px;
+    @media (min-width: 769px) and (max-width: 991px) {
+        font-size: 14.5px;
+    }
+}
+
+
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: 95px; 
+}
+
+/* O index.css normalmente é usado para estilos globais, ou seja, estilos que você quer que afetem o projeto inteiro. */

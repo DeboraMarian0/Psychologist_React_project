@@ -1,0 +1,78 @@
+:root {
+    /* Font */
+    --primary-font: 'Poppins', sans-serif;
+
+    /* Main colors */
+    --background-color: #FFF8EB;
+    --light-background: #FFF0D6;
+    --form-background: #FFFBF5;
+
+    --text-color: #3E2700;
+    --text-banner: #513400;
+    --dark-text: #291A00;
+    --secondary-text: #7A5C2E;
+    --footer-text: #70695C;
+
+    /* Accent colors */
+    --accent-color: #FECC71;
+    --light-accent: #EACB8F;
+    --medium-accent: #E0B566;
+    --dark-accent: #FFA100;
+
+    /* Other colors */
+    --dark-color: #003035;
+    --black-color: #24201A;
+    --white-color: #FFFFFF;
+    --background-color-footer: rgba(254, 204, 113, 0.24);
+    
+    /* Background colors buttons */
+    --button-background-hover: hsla(39, 99%, 72%, 0.48);
+}
+
+/* Button to schedule */
+.btn-to-schedule {
+    display: inline-block;
+    padding: 12px 16px;
+    align-items: center;
+    color: var(--dark-text);
+    font-size: 16px;
+    font-weight: 500;
+    gap: 8px;
+    border-radius: 32px;
+    text-decoration: none;
+    background: var(--accent-color);
+    width: fit-content;
+    border: none;
+}
+
+.btn-to-schedule:hover {
+    background: var(--button-background-hover);
+}
+
+/* Image styles */
+.image-banner img,
+.image-about img,
+.process-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.margin-text {
+    margin-bottom: 32px;
+}
+
+.row {
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+
+
+
+
+
+
+
+

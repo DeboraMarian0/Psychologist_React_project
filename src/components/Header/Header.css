@@ -1,0 +1,112 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0; 
+  background: var(--background-color);
+  height: 95px;
+
+  .navbar {
+    background: var(--background-color);
+    
+    .navbar-toggler:hover {
+      background: var(--button-background-hover);
+    }
+    
+    .mobile-logo {
+      display: none;
+    }
+  }
+
+  /* ---REGRAS DO MOBILE E TABLET--- */
+  @media (max-width: 991px) {
+    padding: 10px 0;
+    .navbar {
+      margin: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: normal;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0 10px 0 0;
+        .desktop-logo {
+          display: none;
+        }
+        
+        .navbar-toggler {
+          border: none;
+          order: 1; 
+          &:hover {
+            border-radius: 32px;
+            background: var(--background-color-footer);
+            padding: 7px;
+          }
+        }
+
+        .mobile-logo {
+          display: block;
+          order: 2; 
+          img {
+            width: 95px;
+            height: 48px;
+            max-width: 100%;
+          }
+        }
+        .button-header {
+            order: 3; 
+            margin-left: auto;
+        }
+
+        .navbar-collapse {
+          order: 4; 
+          padding: 16px 0;
+          width: 100%;
+          
+          .nav-link {
+            padding: 3px 8px;
+            width: fit-content;
+          }
+        }
+
+        .hide-on-mobile {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  /* --- REGRAS DO DESKTOP --- */
+  @media (min-width: 992px) {
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      .desktop-logo {
+        order: 1;
+      }
+      .navbar-collapse {
+        order: 2;
+      }
+      .button-header {
+        order: 3;
+      }
+    }
+  }
+}
+
+.nav-link,
+.btn-to-schedule {
+  color: var(--dark-text) !important;
+}
+
+.nav-link:hover {
+  background: var(--button-background-hover);
+  border-radius: 32px;
+}

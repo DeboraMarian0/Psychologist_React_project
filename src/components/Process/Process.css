@@ -1,0 +1,287 @@
+#process {
+  margin: 62px 0;
+  /*Foi colocado os estilos do botao pra cima como globais para que o mobile capturasse o css das setas do card. Se ficasse aninhado dentro do container-carrosel, não iria pegar.*/
+  .button-carousel {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    .btn-scroll {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      background-color: var( --accent-color);
+      cursor: pointer;
+      &:hover {
+        background: var(--button-background-hover);
+      }
+    }
+  }
+  .container-carousel {
+    overflow: hidden;
+    .container-text {
+      gap: 150px;
+      margin-bottom: 80px;
+      padding-top: 36px;
+      justify-content: space-between;
+      .col-text {
+        flex: 0 0 auto; /* Mantém a largura baseada no max-width */
+        max-width: 540px;
+        h3 {
+          font-weight: bold;
+        }
+        p{
+          margin: 32px 0;
+        }
+        
+      }
+    
+      .carousel-cards {
+        flex: 1; /* Faz o carrossel ocupar o espaço restante ao lado do texto */
+        min-width: 0; /* IMPORTANTE: Impede que o carrossel empurre a tela para o lado e quebre o container */
+        max-width: 660px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        overflow-x: auto; /* Permite rolar */
+        scroll-behavior: smooth; /* Rolagem suave ao clicar no botão */
+        scroll-snap-type: x mandatory; /* Faz o card "parar" no lugar certo */
+        padding: 20px;
+        scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+          display: none; /* Esconde a barra no Chrome */
+        }
+        .card-item {
+          flex: 0 0 300px; /* Não deixa o card encolher, trava em 300px */
+          scroll-snap-align: start; /* Onde o card para ao rolar */
+          padding: 40px;
+          border-radius: 40px;
+          h3{
+            font-size: 24px;
+          }
+          &.light-color { 
+            background-color: var(--light-background); 
+            color: var(--text-color); 
+          }
+          &.dark-color { 
+            background-color: var(--dark-color); 
+            color: var(--white-color); 
+          }
+  
+        }
+      } 
+
+      .mobile-buttons {
+            display: none !important; 
+          }
+    }
+  }
+  .process-row {
+    display: flex;
+    .process-content{
+      max-width: 620px;
+      .title-process {
+        font-size: 32px;
+        line-height: 120%;
+        color: var(--text-color);
+        margin-bottom: 24px;
+      }
+      .introductory-text-process{
+        margin-bottom: 48px;
+        max-width: 520px;
+      }
+      .list-process {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .item-process {
+          display: flex;
+          align-items: flex-start;
+          gap: 24px;
+          .number-process {
+            font-size: 64px;
+            font-weight: 700;
+            color: var(--dark-accent);
+            line-height: 1;
+            min-width: 35px;
+            margin-top: 30px;
+          }
+          .text-process {
+            h4 {
+              font-size: 24px;
+              font-weight: 700;
+              margin-bottom: 12px;
+              color: var(--text-color);
+            }
+            p {
+              margin-bottom: 0;
+              color: var(--text-color);
+              line-height: 170%;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+    .process-image {
+      img {
+        width: 100%;
+        max-height: 850px;
+        border-radius: 0;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+  @media (max-width: 768px) { 
+    margin: 18px 0;
+    .container {
+      align-items: stretch;
+      .container-carousel {
+        .d-flex {
+          flex-direction: column;
+          align-items: normal !important;
+          gap: 2px;
+          margin: 8px 0 40px 0;
+          .col-text {
+            h3{
+              font-size: 25px;
+            }
+          }
+          &.container-text {
+            padding: 0px;
+            gap: 6px;
+          }
+          .button-carousel {
+              justify-content: center;
+              &.desktop-buttons {
+                display: none; 
+              }
+              &.mobile-buttons {
+                display: flex !important;
+                justify-content: center;
+                margin-top: 10px;
+                width: 100%;
+              }
+            }
+        }
+      }
+      .process-row {
+        flex-direction: column-reverse;
+        gap: 40px;
+        .process-content {
+          padding-bottom: 25px;
+          max-width: 100%;
+          .title-process {
+            font-size: 25px;
+            margin-bottom: 24px;
+            text-align: center;
+          }
+          .introductory-text-process {
+            margin-bottom: 32px;
+            text-align: center;
+          }
+          .list-process {
+            padding: 0 12px;
+            .item-process {
+              gap: 16px;
+              align-items: center;
+              .number-process {
+                font-size: 32px;
+                min-width: 35px;
+                margin-top: 8px;
+              }
+              .text-process{
+                h4 {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+        .process-image {
+          height: 500px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 32px 32px 0 32px;
+          }
+        }
+      }
+    
+    
+  }
+  }
+
+  @media (min-width: 769px) and (max-width: 991px) {
+    margin: 40px 0;
+    padding-top: 5px;
+    .container {
+      align-items: stretch;
+      .container-carousel {
+        margin-bottom: 30px;
+        .d-flex {
+          .col-text {
+            max-width: 380px;
+            h3{
+              font-size: 24px;
+            }
+          }
+          &.container-text {
+            padding: 0px;
+            margin-bottom: 40px;
+            gap:40px;
+            .carousel-cards {
+              .card-item {
+                padding: 32px;
+                h3 {
+                  font-size: 18px;
+                  margin-bottom: 1rem;
+                }
+              }
+              
+            }
+          }
+          
+        }
+      }
+      .process-row {
+        .process-content {
+          max-width: 100%; 
+          flex: 1; /* Garante que a coluna preencha todo o container flex */
+          h3 {
+            font-size: 24px;
+            text-align: center;
+          }
+          .introductory-text-process {
+            max-width: 100%;
+            text-align: center;
+          }  
+          .list-process {
+            .item-process {
+              .number-process{
+                font-size: 46px;
+              }
+              .text-process {
+                h4{
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+        .process-image {
+          display: none !important;
+        }
+      }
+      
+      
+    }
+    
+
+    
+    
+  }
+
+}

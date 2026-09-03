@@ -1,0 +1,45 @@
+#banner {
+    color: var(--text-banner);
+    margin: 50px 0;
+    line-height: 150%;
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        h1 {
+            font-size: 22px !important;
+            line-height: 35px !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 40px;
+        .inverted-content {
+            flex-direction: column-reverse;
+            gap: 40px;
+            .col {
+                text-align: center;
+            }
+            h1 {
+                font-size: 20px !important;
+            }
+
+        }
+        
+    }
+
+    @media (min-width: 769px) and (max-width: 991px) {
+        .row {
+            gap: 30px;
+            h1 {
+                font-size: 18px !important;
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,129 @@
+#contact {
+    margin: 80px 0;
+    .row-contact {
+      background: var(--light-background);
+      padding: 64px 26px;
+      border-radius: 40px;
+      gap: 2px;
+      .virtual-contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        gap: 20px;
+        a {
+          color: var(--text-color);
+          text-decoration: none;
+        }
+        img {
+          margin-right: 8px;
+        }
+      }
+      .container-form {
+        background: var(--form-background);
+        padding: 30px;
+        border-radius: 40px;
+        color: var(--black-color);
+        .row-form {
+          gap: 0;
+          .col {
+            position: relative;
+            padding-bottom: 24px; /* Espaço fixo para a mensagem de erro morar */
+          }
+          label {
+            margin: 4px 0 8px 0;
+          }
+          textarea {
+              margin-bottom: 20px;
+          }
+          .form-control {
+            font-size: 13px;
+            color: var(--black-color);
+          }
+          /*o texto flutua no espaço reservado sem empurrar o layout */
+          .invalid-feedback {
+            position: absolute;
+            bottom: 4px; /* Gruda no fundo da coluna (dentro do padding-bottom) */
+            left: 12px; /* Alinha com o comecinho do input */
+            margin: 0;
+            font-size: 12px; /* Deixa o texto delicado */
+          }
+          
+        }
+        .send-button {
+          display: flex;
+          justify-content: flex-end;
+          .btn-form:hover {
+            background: var(--button-background-hover);
+          }
+        }
+
+      }
+
+
+    }
+    @media (max-width: 768px) {
+      margin: 40px 0;
+      .row-contact {
+        padding: 32px 16px;
+        border-radius:  32px;
+        .col {
+          .margin-text {
+            margin-bottom: 24px;
+          }
+          .virtual-contact {
+            margin: 0 0 32px 0;
+          }
+          .container-form {
+            padding: 20px 16px;
+            border-radius: 25px;
+            .row-form {
+              flex-direction: column;
+              gap: 4px;
+              .margin-spacing {
+                margin-top: 10px;
+              }
+
+            }
+            .send-button {
+              .btn-form {
+                width: 100%;
+                text-align: center;
+            }
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 991px) {
+      margin: 52px 0;
+      .row-contact {
+        padding: 38px 26px;
+        flex-direction: column;
+        .col {
+          .margin-text {
+            margin-bottom: 32px;
+          }
+          h3 {
+            font-size: 24px;
+          }
+          .virtual-contact {
+            flex-direction: row;
+            gap: 24px;
+            margin: 42px 0;
+          }
+        }
+      }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

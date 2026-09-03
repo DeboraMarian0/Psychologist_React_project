@@ -1,0 +1,123 @@
+#specialties {
+    padding: 38px 0 15px 0;
+    background: #FFF8EB;
+    .title-specialties{
+      max-width: 700px;
+      margin: 0 auto 60px;
+      text-align: center;
+      .subtitle-specialties {
+        letter-spacing: 2px;
+        color: var( --secondary-text);
+        margin-bottom: 10px;
+        font-weight: 300;
+      }
+      .main-title-specialties {
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+      .description-specialties {
+        color: var(--text-color);
+      }
+    }
+    /* Cards */
+    .cards-specialties {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        .card-specialtie {
+          padding: 64px;
+          min-height: 180px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 16px;
+          transition: 0.3s;
+          h4 {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          p {
+            line-height: 1.5;
+          }
+          &.light {
+            background: var(--light-background);
+          }
+          &.medium {
+            background: var(--light-accent);
+          }
+          &.dark {
+            background: var(--medium-accent);
+          }
+
+          /* cards border */
+          &:nth-child(1) {
+            border-radius: 40px 40px 0 40px;
+          }
+          &:nth-child(2) {
+            border-radius: 40px 40px 40px 0px;
+          }
+          &:nth-child(3) {
+            border-radius: 40px 0 40px 40px;
+          }
+          &:nth-child(4) {
+            border-radius: 0 40px 40px 40px;
+          }
+
+        }
+    }
+    @media (max-width: 768px) {
+      margin-top: 62px;
+      padding: 0 0 30px 0;
+      .title-specialties{
+        margin: 0 auto 40px;
+        .main-title-specialties {
+          font-size: 25px;
+        }
+      }
+      .cards-specialties {
+        grid-template-columns: 1fr;
+        .card-specialtie {
+          padding: 32px;
+          gap: 24px;
+          h4 {
+            font-size: 26px;
+          }
+        }
+      }
+
+
+    }
+    @media (min-width: 769px) and (max-width: 991px) {
+      padding-top: 3px;
+      .title-specialties {
+        margin: 0 auto 28px;
+        .main-title-specialties {
+          font-size: 24px;
+        }
+      }
+      .cards-specialties {
+        .card-specialtie {
+          padding: 36px;
+          h4 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

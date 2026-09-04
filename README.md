@@ -11,7 +11,7 @@ Uma landing page responsiva e otimizada para SEO, desenvolvida para apresentar o
 * **[React](https://reactjs.org/)**: Biblioteca JavaScript para construção da interface de usuário baseada em componentes.
 * **[Vite](https://vitejs.dev/)**: Ferramenta de build para o ambiente de desenvolvimento.
 * **[Bootstrap 5](https://getbootstrap.com/)**: Framework CSS utilizado para o sistema de grid, alinhamentos e componentes responsivos.
-* **CSS3 Customizado**: Estilização adicional utilizando variáveis CSS (Design Tokens) e media queries precisas para adaptação fluida entre mobile, tablet e desktop.
+* **CSS3**: Estilização adicional utilizando variáveis CSS (Design Tokens) e media queries precisas para adaptação fluida entre mobile, tablet e desktop.
 
 ## Funcionalidades e Destaques
 

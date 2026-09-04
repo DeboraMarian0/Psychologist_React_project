@@ -35,7 +35,7 @@ function Specialties() {
             <p>
               Acredito que ninguém sabe mais sobre você do que você mesma. Meu
               papel é te ajudar a compreender o que faz sentido para você e
-              caminharmos a partir disso
+              caminharmos a partir disso.
             </p>
           </div>
 
